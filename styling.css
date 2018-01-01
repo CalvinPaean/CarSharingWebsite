@@ -1,0 +1,251 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+/*Background Image*/
+body{
+    font-family: Arvo, serif;
+    background: url("image.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*Style Jumbotron*/
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+/*buttons*/
+.signup{
+    margin: 30px auto;   
+}
+
+.green{
+    background-color: rgba(109,109,109,0.8);  
+    color: white;
+}
+
+.green:hover{
+    background-color: rgb(114,190,35);   
+}
+
+#myContainer{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-size: 5em;
+}
+.bold{
+    font-weight:bold;
+}
+
+#googleMap{
+    width: 100%;
+    height:30vh;    
+    margin: 10px auto;
+}
+/*Style the footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+input{
+    color:black;
+}
+
+.noresults{
+    text-align: center;
+}
+
+.profile{
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+#searchResults{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.driver{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.departure, .destination{
+    font-size: 1.5em;
+}
+.price{
+    font-size: 2em;
+}
+.perseat{
+    font-size: 0.5em;
+}
+.seatsavailable{
+    font-size: 0.7em;
+}
+.journey{
+    text-align: left;
+}
+.time{
+    margin-top: 10px;
+}
+.journey2{
+    text-align: right;
+}
+.moreinfo{
+    text-align: left;
+}
+.aboutme{
+    border-top: 1px solid grey;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+.journeysummary, .noresults{
+    text-align: left;
+    font-size: 1.5em;
+    background-color: #676767;
+    color:white;
+    border-style: none;
+}
+#spinner{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    margin: auto;
+    text-align: center;
+    z-index:1100;
+}
+.preview{
+  height: 20px;
+  border-radius: 50%;
+}
+
+/*navigation bar*/
+.navbar-custom {
+  background-color: #5b5b5b;
+  border-color: #4a4a4a;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#757575), to(#5b5b5b));
+  background-image: -webkit-linear-gradient(top, #757575, 0%, #5b5b5b, 100%);
+  background-image: -moz-linear-gradient(top, #757575 0%, #5b5b5b 100%);
+  background-image: linear-gradient(to bottom, #757575 0%, #5b5b5b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff757575', endColorstr='#ff5b5b5b', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e6e6e6;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #4a4a4a;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #4a4a4a;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #c0c0c0;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #c0c0c0;
+  background-color: #4a4a4a;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#4a4a4a), to(#646464));
+  background-image: -webkit-linear-gradient(top, #4a4a4a, 0%, #646464, 100%);
+  background-image: -moz-linear-gradient(top, #4a4a4a 0%, #646464 100%);
+  background-image: linear-gradient(to bottom, #4a4a4a 0%, #646464 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4a4a4a', endColorstr='#ff646464', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #494949;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #4a4a4a;
+  color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #c0c0c0;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #c0c0c0;
+    background-color: #4a4a4a;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #c0c0c0;
+}
